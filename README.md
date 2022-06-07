@@ -1,6 +1,5 @@
 # GryllsBongos
-Bongos Extension for World of Warcraft: Vanilla
-Requires Bongos
+Bongos Extension for World of Warcraft: Vanilla (Requires Bongos)
 
 Command:
 /gb or /gryllsbongos
