@@ -7,6 +7,7 @@ Bongos Extension for World of Warcraft: Vanilla (Requires Bongos)
 ### Description:<br>
 This addon allows you to set additional hiding options including mouseover and manual toggle for Bongos bars<br>
 The addon settings will save per character<br>
+The addon currently supports Bongos bars 1-10<br>
 
 ### Usage:<br>
 /gb mouseover bar n - show bar n on mouseover<br>
