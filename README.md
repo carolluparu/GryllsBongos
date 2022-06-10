@@ -1,5 +1,5 @@
 # GryllsBongos
-Bongos Extension for World of Warcraft: Vanilla (Requires Bongos)
+Bongos Extension for World of Warcraft: Vanilla 
 
 ### Command:<br>
 /gb or /gryllsbongos
@@ -8,6 +8,7 @@ Bongos Extension for World of Warcraft: Vanilla (Requires Bongos)
 This addon allows you to set additional hiding options including mouseover and manual toggle for Bongos bars<br>
 The addon settings will save per character<br>
 The addon currently supports Bongos bars 1-10<br>
+The addon requires Bongos<br>
 
 ### Usage:<br>
 /gb mouseover bar n - show bar n on mouseover<br>
