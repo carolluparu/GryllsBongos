@@ -42,8 +42,6 @@ The addon requires Bongos<br>
 
 /gb reset|r - resets all bar settings<br>
 
-
-
 ### Example:<br>
 To toggle bars 1 and 4 manually use:<br>
 /gb toggle bar 1<br>
