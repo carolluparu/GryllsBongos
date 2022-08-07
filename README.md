@@ -49,6 +49,6 @@ To toggle bars 1 and 4 manually use:<br>
 Bars 1 and 4 will now be hidden unless toggled using the /gb toggle command
 
 To set bar 3 to be shown on mouseover use:<br>
-/gb toggle 3
+/gb mouseover bar 3
 
 The hide and show functions will hide or show the bar permanently
