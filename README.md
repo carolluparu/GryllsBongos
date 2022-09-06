@@ -7,10 +7,9 @@ The addon settings will save per character<br>
 The addon currently supports Bongos bars 1-10<br>
 The addon requires Bongos<br>
 
-### Command:<br>
+### Commands:<br>
 /gb or /gryllsbongos
 
-### Usage:<br>
 /gb mouseover bar n - show bar n on mouseover<br>
 /gb mouseover bags - show bags bar on mouseover<br>
 /gb mouseover class - show class bar on mouseover<br>
