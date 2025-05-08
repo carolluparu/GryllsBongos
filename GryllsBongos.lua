@@ -16,6 +16,7 @@ GryllsBongos_Settings = {
     key = "none",
     menu = "none",
     xp = "none",
+	pet = "none",
 }
 
 local function setVar(i, action)
@@ -130,6 +131,10 @@ local function BarToggle()
     if GryllsBongos_Settings.xp == "toggle" then
         BBar.Toggle(BXPBar, false)
     end
+	
+	if GryllsBongos_Settings.pet == "toggle" then
+        BBar.Toggle(BPetBar, false)
+    end
 
 end
 
@@ -159,6 +164,10 @@ local function BarHide()
     if GryllsBongos_Settings.xp == "hide" then
         BBar.Hide(BXPBar, false)
     end
+	
+    if GryllsBongos_Settings.pet == "hide" then
+        BBar.Hide(BPetBar, false)
+    end
 end
 
 local function BarShow()
@@ -186,6 +195,10 @@ local function BarShow()
 
     if GryllsBongos_Settings.xp == "show" then
         BBar.Show(BXPBar, false)
+    end
+	
+    if GryllsBongos_Settings.pet == "show" then
+        BBar.Show(BPetBar, false)
     end
 end
 
@@ -264,6 +277,10 @@ local function BarMouseover()
     if GryllsBongos_Settings.xp == "mouseover" then
         BarMouseoverSetScript(BXPBar)
     end
+	
+    if GryllsBongos_Settings.pet == "mouseover" then
+        BarMouseoverSetScript(BPetBar)
+    end
 end
 
 local function BarUpdate()
@@ -283,6 +300,7 @@ local function BarReset()
     GryllsBongos_Settings.key = "none"
     GryllsBongos_Settings.menu = "none"
     GryllsBongos_Settings.xp = "none"
+    GryllsBongos_Settings.pet = "none"
 end
 
 local function GryllsBongos_commands(msg, editbox)
@@ -403,6 +421,23 @@ local function GryllsBongos_commands(msg, editbox)
         GryllsBongos_Settings.xp = "show"
         DEFAULT_CHAT_FRAME:AddMessage("|c"..orange.."Grylls|rBongos:|r xp is set to show")
         BarUpdate()
+    -- pet
+    elseif msg == "mouseover pet" then
+        GryllsBongos_Settings.pet = "mouseover"
+        DEFAULT_CHAT_FRAME:AddMessage("|c"..orange.."Grylls|rBongos:|r pet is set to mouseover (please reload)")
+        BarUpdate()
+    elseif msg == "toggle pet" then
+        GryllsBongos_Settings.pet = "toggle"
+        DEFAULT_CHAT_FRAME:AddMessage("|c"..orange.."Grylls|rBongos:|r pet is set to toggle (please reload to sync toggled elemets)")
+        BarUpdate()
+    elseif msg == "hide pet" then
+        GryllsBongos_Settings.pet = "hide"
+        DEFAULT_CHAT_FRAME:AddMessage("|c"..orange.."Grylls|rBongos:|r pet is set to hidden")
+        BarUpdate()
+    elseif msg == "show pet" then
+        GryllsBongos_Settings.pet = "show"
+        DEFAULT_CHAT_FRAME:AddMessage("|c"..orange.."Grylls|rBongos:|r pet is set to show")
+        BarUpdate()
 
     elseif msg == "toggle" then
         BarToggle()
@@ -420,7 +455,8 @@ local function GryllsBongos_commands(msg, editbox)
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb mouseover key|r - show key bar on mouseover")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb mouseover menu|r - show menu bar n on mouseover")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb mouseover xp|r - show xp bar on mouseover")
-
+		DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb mouseover pet|r - show pet bar on mouseover")
+		
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb toggle|r - toggles all elements that are set to toggle")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb toggle bar n|r - toggle bar n with command")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb toggle bags|r - toggle bags bar with command")
@@ -428,6 +464,7 @@ local function GryllsBongos_commands(msg, editbox)
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb toggle key|r - toggle key bar with command")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb toggle menu|r - toggle menu bar with command")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb toggle xp|r - toggle xp bar with command")
+        DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb toggle pet|r - toggle pet bar with command")		
 
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb hide bar n|r - hide bar n")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb hide bags|r - hide bags bar")
@@ -435,13 +472,15 @@ local function GryllsBongos_commands(msg, editbox)
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb hide key|r - hide key bar")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb hide menu|r - hide menu bar")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb hide xp|r - hide xp bar")
-
+		DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb hide pet|r - hide pet bar")
+		
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb show bar n|r - show bar n")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb show bags|r - show bags bar")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb show class|r - show class bar")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb show key|r - show key bar")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb show menu|r - show menu bar")
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb show xp|r - show xp bar")
+		DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb show pet|r - show pet bar")
 
         DEFAULT_CHAT_FRAME:AddMessage("|c"..yellow.."/gb reset|r - resets all bar settings")
 	end
