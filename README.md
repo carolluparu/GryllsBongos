@@ -16,6 +16,7 @@ The addon requires Bongos<br>
 /gb mouseover key - show key bar on mouseover<br>
 /gb mouseover menu - show menu bar n on mouseover<br>
 /gb mouseover xp - show xp bar on mouseover<br>
+/gb mouseover pet - show pet bar on mouseover<br>
 
 /gb toggle - toggles all elements that are set to toggle<br>
 /gb toggle bar n - toggle bar n with command<br>
@@ -24,6 +25,7 @@ The addon requires Bongos<br>
 /gb toggle key - toggle key bar with command<br>
 /gb toggle menu - toggle menu bar with command<br>
 /gb toggle xp - toggle xp bar with command<br>
+/gb toggle pet - toggle pet bar with command<br>
 
 /gb hide bar n - hide bar n<br>
 /gb hide bags - hide bags bar<br>
@@ -31,6 +33,7 @@ The addon requires Bongos<br>
 /gb hide key - hide key bar<br>
 /gb hide menu - hide menu bar<br>
 /gb hide xp - hide xp bar<br>
+/gb hide pet - hide pet bar<br>
 
 /gb show bar n - show bar n<br>
 /gb show bags - show bags bar<br>
@@ -38,6 +41,7 @@ The addon requires Bongos<br>
 /gb show key - show key bar<br>
 /gb show menu - show menu bar<br>
 /gb show xp - show xp bar<br>
+/gb show pet - show pet bar<br>
 
 /gb reset - resets all bar settings<br>
 
